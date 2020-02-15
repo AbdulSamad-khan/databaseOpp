@@ -24,4 +24,10 @@ class Test extends Dbh{
    }
  }
 
+ public function setUsersPre($name,$age,$gender){
+   $sql = "INSERT INTO student(name,age,gender) VALUES(?, ?, ?);";
+   $stmt = $this->connection()->prepare($sql);
+   $stmt->execute([$name,$age,$gender]);
+ }
+
 }
