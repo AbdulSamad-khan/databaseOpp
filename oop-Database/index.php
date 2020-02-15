@@ -4,7 +4,8 @@ if(isset($_POST['submit'])){
 // print_r($_POST);
 // exit();
   $testObj = new Test();
-  $testObj->setUsers($_POST['name'],$_POST['age'],$_POST['gender']);
+  // $testObj->setUsers($_POST['name'],$_POST['age'],$_POST['gender']);
+  $testObj->prepareUsers('yousra aslam',26);
 }
  ?>
 <!DOCTYPE html>
